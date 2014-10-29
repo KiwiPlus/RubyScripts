@@ -9,14 +9,11 @@ class PrettyPrinter
 
 		something.each do |x|
 			if x.class == Array
-				#formatting
 				puts "Array:"
 				puts x
 			elsif x.class == Hash
-				#formatting
 				puts "Hash:"
 				x.each do |key, value|
-				#formatting /keytostring and value
 				puts key.to_s + ' => ' + value
 			end
 				#don't know if it works
