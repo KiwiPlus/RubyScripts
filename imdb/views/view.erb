@@ -1,0 +1,23 @@
+<html>
+<link rel="stylesheet" href="ces.css">
+	<body>
+		<form action="/search" METHOD= "POST">
+			<input type="text" name= "srch">
+			<input action= "/search" type="submit" value="submit" />
+		</form>
+
+
+<div class= "crumb">
+	<ul>
+			<% @post.each do |movies| %>
+<li>
+			<img class= "form" src= "<%= movies %>">
+			
+			<%end%>
+			<% @post.each do |movies| %>
+		</div>  <%= result %> </div>
+		<% end%>
+	</ul>
+</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src= "jquery-1.11.1.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	$(function() {
+		$("#inside").css("border","2px solid black")
+	})
+	$("#inside").ready(function() {
+		$("#inside").on("click", $(function() {
+			alert("doki");
+		})
+	}))
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id= "inside">
+			Hola!
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- $('button').on("click" , function() {
+	...
+}
+	$(function() {
+		$("#inside").remove();
+	});
